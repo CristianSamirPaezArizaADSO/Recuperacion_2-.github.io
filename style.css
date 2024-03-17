@@ -89,24 +89,27 @@
   background-size: cover;
   background-position: center;
   display: flex;
+  justify-content: center;
   flex-direction: column;
 }
 
-.section__chef--title{
+.section__chef--txs{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    gap: 60px;
+    align-items: center;
+}
+
+.section__chef--title{
     color: var(--color__chef);
     font-size: 100px;
-    margin-top: 100px;
 }
 
 .section__chef--p{
     color: var(--color__chef);
     font-size: 30px;
-    margin-top: 100px;
-    text-align: center;
     width: 800px;
-    margin-left: 550px;
+    text-align: center;
 }
 
 
@@ -202,26 +205,218 @@
     color: var(--color__chef);
 }
 
+.section__hambur--img{
+    border-radius: 300px;
+}
+
 /* comienzo de las estadisticas */
 
 .section__estadisticas{
     background-color: var(--color__chef);
     width: 100%;
-    height: 100vh;
+    height: 120vh;
     display: flex;
     justify-content: center;
     text-align: center;
+    flex-direction: column;
 }
 
+.section__estadisticas--txs{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    align-items: center;
+}
 .section__estadisticas--tilte{
     font-size: 80px;
-    margin-top: 50px;
     color: var(--color__header);
 }
 
 .section__estadisticas--p{
     font-size: 30px;
-    margin-top: 20px;
     width: 800px;
     color: var(--color__header);
+}
+
+.section__estadisticas--cards{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* comienzo populares */
+
+.section__populares{
+    background-image: url(Sin-título-6.png);
+    width: 100%;
+    height: 120vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    gap: 200px;
+}
+.section__populares--txt{
+    margin-top: 30px;
+}
+.section__populares--title{
+    color: var(--color__chef);
+    font-size: 90px;
+}
+
+.section__populares--cards{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.populares__cards--1{
+    background-color: var(--color__header);
+    border-radius: 10px;
+    width: 400px;
+    height: 500px;
+}
+.populares__cards--2{
+    background-color: var(--color__header);
+    border-radius: 10px;
+    width: 400px;
+    height: 500px;
+}
+
+.populares__cards--3{
+    background-color: var(--color__header);
+    border-radius: 10px;
+    width: 400px;
+    height: 500px;
+}
+
+.card__contenido{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+}
+
+.populares__cards--title{
+    color: var(--color__chef);
+    font-size: 24px;
+}
+
+.populares__cards--img{
+    padding: 20px;
+}
+
+.populares__cards--precio{
+    color: var(--color__chef);
+    font-size: 36px;
+}
+
+.populares__cards--p{
+    color: var(--color__chef);
+    font-size: 24px;
+}
+
+.populares__cards--boton{
+    background-color: var(--color_boton);
+    color: var(--color__header);
+    font-size: 30px;
+    border: none;
+    border-radius: 50px;
+    padding: 5px 80px;
+}
+
+/* comienzo section fondo */
+
+.section__fondo{
+    background-image: url(Sin-título-7.png);
+    width: 100%;
+    height: 120vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.section__fondo--txs{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 150px;
+}
+
+.section__fondo--p{
+    color: var(--color__header);
+    font-size: 40px;
+    width: 800px;
+}
+
+.section__fondo--autor{
+    color: var(--color__header);
+    font-size: 50px;
+}
+
+/* comienzo section actualizacion */
+
+.section__actializacion{
+    background-image: url(Sin-título-1.png);
+    width: 100%;
+    height: 120vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.section__actializacion--txs{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.section__actializacion--title{
+    color: var(--color__chef);
+    font-size: 80px;
+}
+
+.section__actializacion--p{
+    color: var(--color__chef);
+    font-size: 30px;
+    width: 800px;
+}
+
+.section__actializacion--boton{
+    background-color: var(--color__header);
+    color: var(--color__header);
+    width: 790px;
+    text-align: center;
+    border-radius: 30px;
+}
+
+.actializacion__input--boton{
+    border: none;
+    font-size: 20px;
+    padding: 5px;
+    width: 76%;
+}
+
+.actializacion__boton{
+    background-color: var(--color__chef);
+    color: white;
+    border: none;
+    border-radius: 0px 50px 50px 0px;
+    padding: 10px;
+    font-size: 24px;
+    width: 169px;
+    cursor: pointer;
+}
+
+.actializacion__boton:hover{
+    background-color: var(--color__header);
+    color: var(--color__chef);
 }
