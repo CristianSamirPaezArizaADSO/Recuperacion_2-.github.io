@@ -2,8 +2,9 @@
 
 :root{
     --color__header:#fff;
-    --color_boton: #f64b3c;
+    --color__boton: #f64b3c;
     --color__chef: #f54031;
+    --color__foter: #222222;
 }
 
 *{
@@ -72,7 +73,7 @@
     font-size: 30px;
     padding: 10px 90px;
     color: var(--color__header);
-    background-color: var(--color_boton);
+    background-color: var(--color__boton);
     border: none;
     margin-top: 50px;
     display: flex;
@@ -168,7 +169,7 @@
     border-radius: 90px;
     font-size: 30px;
     padding: 10px 90px;
-    color: var(--color_boton);
+    color: var(--color__boton);
     background-color: var(--color__header);
     border: none;
     margin-top: 50px;
@@ -318,7 +319,7 @@
 }
 
 .populares__cards--boton{
-    background-color: var(--color_boton);
+    background-color: var(--color__boton);
     color: var(--color__header);
     font-size: 30px;
     border: none;
@@ -387,14 +388,17 @@
 .section__actializacion--p{
     color: var(--color__chef);
     font-size: 30px;
-    width: 800px;
+    width: 900px;
 }
 
 .section__actializacion--boton{
     background-color: var(--color__header);
     color: var(--color__header);
-    width: 790px;
+    width: 900px;
+    display: flex;
+    align-items: center;
     text-align: center;
+    justify-content: center;
     border-radius: 30px;
 }
 
@@ -402,7 +406,7 @@
     border: none;
     font-size: 20px;
     padding: 5px;
-    width: 76%;
+    width: 79%;
 }
 
 .actializacion__boton{
@@ -420,3 +424,65 @@
     background-color: var(--color__header);
     color: var(--color__chef);
 }
+
+/* comienzo footer */
+
+.footer{
+    background-color: var(--color__foter);
+    height: 110vh;
+    color: var(--color__header);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* gap: 15%; */
+    padding: 20px;
+}
+
+.footer__txs{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    gap: 30px;
+    width: 40%;
+}
+
+.footer__title{
+    font-size: 20px;
+}
+
+.footer__p{
+    font-size: 20px;
+}
+
+.footer__list{
+    display: flex;
+    text-align: start;
+}
+
+.footer__list--1{
+    list-style: none;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    font-size: 20px;
+}
+
+.footer__list--2{
+    list-style: none;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    font-size: 20px;
+}
+
+.footer__list--3 {
+    list-style-type: none;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    font-size: 20px;
+}
+
