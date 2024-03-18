@@ -86,7 +86,7 @@
 .section__chef{
   width: 100%;
   height: 115vh;
-  background-image: url(Sin-título-3.png);
+  background-image: url(../img/Sin-título-3.png);
   background-size: cover;
   background-position: center;
   display: flex;
@@ -101,7 +101,7 @@
     align-items: center;
 }
 
-.section__chef--title{
+.title{
     color: var(--color__chef);
     font-size: 100px;
 }
@@ -127,12 +127,13 @@
 .card__title{
     color: var(--color__chef);
     font-size: 30px;
-    margin-top: 10px;
+    margin-top: 10px;     
 }
 .card__txt{
     color: var(--color__chef);
     font-size: 25px;
     margin-top: 10px;
+    text-align: center;
 }
 
 /* comienzo de la primera hamburgesa */
@@ -180,7 +181,7 @@
 /* comienzo de la segunda hamburgesa */
 
 .section__hambur{
-    background-image: url(Sin-título-5.png);
+    background-image: url(../img/Sin-título-5.png);
     width: 100%;
     height: 115vh;
     background-size: cover;
@@ -195,10 +196,7 @@
     align-items: center;
     gap: 100px;
 }
-.section__hambur--title{
-    font-size: 80px;
-    color: var(--color__chef);
-}
+
 .section__hambur--p{
     font-size: 30px;
     margin-top: 20px;
@@ -248,7 +246,7 @@
 /* comienzo populares */
 
 .section__populares{
-    background-image: url(Sin-título-6.png);
+    background-image: url(../img/Sin-título-6.png);
     width: 100%;
     height: 120vh;
     background-size: cover;
@@ -259,11 +257,7 @@
     gap: 200px;
 }
 .section__populares--txt{
-    margin-top: 30px;
-}
-.section__populares--title{
-    color: var(--color__chef);
-    font-size: 90px;
+    margin-top: 70px;
 }
 
 .section__populares--cards{
@@ -271,20 +265,7 @@
     justify-content: space-evenly;
 }
 
-.populares__cards--1{
-    background-color: var(--color__header);
-    border-radius: 10px;
-    width: 400px;
-    height: 500px;
-}
-.populares__cards--2{
-    background-color: var(--color__header);
-    border-radius: 10px;
-    width: 400px;
-    height: 500px;
-}
-
-.populares__cards--3{
+.card{
     background-color: var(--color__header);
     border-radius: 10px;
     width: 400px;
@@ -330,7 +311,7 @@
 /* comienzo section fondo */
 
 .section__fondo{
-    background-image: url(Sin-título-7.png);
+    background-image: url(../img/Sin-título-7.png);
     width: 100%;
     height: 120vh;
     background-size: cover;
@@ -362,13 +343,12 @@
 /* comienzo section actualizacion */
 
 .section__actializacion{
-    background-image: url(Sin-título-1.png);
+    background-image: url(../img/Sin-título-1.png);
     width: 100%;
     height: 120vh;
     background-size: cover;
     background-position: center;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -377,52 +357,14 @@
 .section__actializacion--txs{
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 60px;
-}
-
-.section__actializacion--title{
-    color: var(--color__chef);
-    font-size: 80px;
 }
 
 .section__actializacion--p{
     color: var(--color__chef);
     font-size: 30px;
     width: 900px;
-}
-
-.section__actializacion--boton{
-    background-color: var(--color__header);
-    color: var(--color__header);
-    width: 900px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    border-radius: 30px;
-}
-
-.actializacion__input--boton{
-    border: none;
-    font-size: 20px;
-    padding: 5px;
-    width: 79%;
-}
-
-.actializacion__boton{
-    background-color: var(--color__chef);
-    color: white;
-    border: none;
-    border-radius: 0px 50px 50px 0px;
-    padding: 10px;
-    font-size: 24px;
-    width: 169px;
-    cursor: pointer;
-}
-
-.actializacion__boton:hover{
-    background-color: var(--color__header);
-    color: var(--color__chef);
 }
 
 /* comienzo footer */
@@ -502,3 +444,4 @@
     text-align: center;
     font-size: 2em;
 }
+
