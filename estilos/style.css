@@ -243,7 +243,7 @@
 .section__populares{
     background-image: url(../img/Sin-título-6.png);
     width: 100%;
-    height: 120vh;
+    height: 100vh;
     background-size: cover;
     background-position: center;
     display: flex;
@@ -308,7 +308,7 @@
 .section__fondo{
     background-image: url(../img/Sin-título-7.png);
     width: 100%;
-    height: 120vh;
+    height: 100vh;
     background-size: cover;
     background-position: center;
     display: flex;
@@ -322,7 +322,6 @@
     flex-direction: column;
     text-align: center;
     gap: 150px;
-    /* gap: 15%; */
 }
 
 .section__fondo--p{
@@ -333,7 +332,7 @@
 
 .section__fondo--autor{
     color: var(--color__header);
-    font-size: 50px;
+    font-size: 80px;
 }
 
 /* comienzo section actualizacion */
@@ -341,7 +340,7 @@
 .section__actializacion{
     background-image: url(../img/Sin-título-1.png);
     width: 100%;
-    height: 120vh;
+    height: 100vh;
     background-size: cover;
     background-position: center;
     display: flex;
@@ -380,7 +379,7 @@
     display: flex;
     flex-direction: column;
     text-align: start;
-    gap: 30px;
+    gap: 50px;
     width: 40%;
     margin: 50px;
 }
@@ -391,7 +390,7 @@
 
 .footer__p{
     font-size: 25px;
-    width: 600px;
+    width: 80%;
 }
 
 .footer__list{
@@ -415,7 +414,7 @@
 
 .icono {
     padding: 10px;
-    border-radius: 30px;
+    border-radius: 40px;
     background-color: var(--color__header);
     color: var(--color__iconos);
     width: 40px;
@@ -426,10 +425,11 @@
 /* Media query para Laptop */
 
 @media (max-width: 1024px) {
+
     /* comienzo header  */
     .header{
-        width: 100%;
-        height: 100vh;
+        /* width: 100%; */
+        height: 70vh;
         background-size: cover;
         background-position: center;
     }
@@ -449,20 +449,20 @@
 
     .header__txt--p{
         font-size: 20px;
-        margin-top: 10%;
+        margin-top: 9%;
     }
 
     .header__button{
         font-size: 20px;
         padding: 5px 60px;
-        margin-top: 10%;
+        margin-top: 9%;
     }
 
     /* comienzo chef  */
 
     .section__chef{
-        width: 100%;
-        height: 100vh;
+        /* width: 100%; */
+        height: 70vh;
         background-size: cover;
         background-position: center;
     }
@@ -504,8 +504,9 @@
     /* comienza la primera hamburgesa */
 
     .section__burger{
-        width: 100%;
-        height: 100vh;
+        /* width: 100%; */
+        height: 70vh;
+        /* padding: 3%  ; */
     }
 
     .section__burger--relleno{
@@ -519,6 +520,7 @@
     .section__burger--p{
         font-size: 20px;
         width: 450px;
+        width: 82%;
     }
 
     .burger__buton{
@@ -534,10 +536,14 @@
     /* comienzo segunda hamburgesa */
 
     .section__hambur{
-        width: 100%;
-        height: 100vh;
+        /* width: 100%; */
+        height: 70vh;
         background-size: cover;
         background-position: center;
+    }
+
+    .section__hambur--img{
+      width: 70%;
     }
 
     .section__hambur--relleno{
@@ -553,7 +559,7 @@
 
     .section__estadisticas{
         width: 100%;
-        height: 100vh;
+        height: 70vh;
     }
 
     .section__estadisticas--txs{
@@ -577,7 +583,6 @@
     .section__populares{
         width: 100%;
         height: 100vh;
-        display: flex;
         background-size: cover;
         background-position: center; 
     }
@@ -611,11 +616,172 @@
     /* comienzo fondo  */
 
     .section__fondo{
-        width: 100%;
-        height: 100vh;
+        /* width: 100%; */
+        height: 70vh;
         background-size: cover;
         background-position: center; 
     }
 
+    .section__fondo--txs{
+      gap: 100px;
+    }
+
+    .section__fondo--p{
+      font-size: 30px;
+    }
+
+    .section__fondo--autor{
+      font-size: 60px ;
+    }
+
+    /* comienzo actializacion  */
+
+    .section__actializacion{
+      /* width: 100%; */
+      height: 70vh;
+      display: flex;
+      background-size: cover;
+      background-position: center; 
+    }
+
+    .section__actializacion--p{
+      font-size: 25px;
+      width: 650px;
+    }
+
+    .section__actializacion--img{
+      width: 80%;
+    }
+
+    /* comienzo footer  */
+
+    .footer{
+      height: 70vh;
+    }
+
+    .footer__tilte{
+      font-size: 25px;
+    }
+
+    .footer__p{
+      font-size: 20px;
+    }
+
+    .footer__iconos{
+      gap: 20px;
+    }
+
+    .icono{
+      font-size: 1.5em;
+      width: 30px;
+      border-radius: 50px  ;
+    }
+
+    .list{
+      font-size: 20px;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .footer__list--3{
+      display: none;
+    }
 }
+
+/* Media qeury de la tablet */
+
+@media  screen and (max-width:768px) {
+
+  /* comienzo header  */
   
+  .header{
+    /* width: 100%; */
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .header__navegacion--list{
+    font-size: 15px;
+  }
+
+  .header__txt--title{
+    font-size: 40px;
+  }
+
+  .header__txt--p{
+    font-size: 18px;
+  }
+
+  .header__button{
+    font-size: 18px;
+  }
+  
+  /* comienza chef  */
+
+  .section__chef{
+    height: 60vh;
+  }
+
+  .title{
+    font-size: 45px;
+  }
+
+  .section__chef--p{
+    font-size: 18px;
+    width: 80%;
+  }
+
+  .card__img{
+    width: 65%;
+  }
+
+  .card__title{
+    font-size: 18px;
+  }
+
+  .card__txt{
+    font-size: 18px;
+  }
+
+  /* comienza la primera hamburgesa */
+
+  .section__burger{
+    height: 60vh;
+  }
+
+  .section__burger--relleno{
+    gap: 40px;
+  }
+
+  .section__burger--title{
+    font-size: 50px;
+  }
+
+  .section__burger--p{
+    font-size: 18px;
+  }
+
+  .burger__buton{
+    font-size: 18px;
+  }
+
+  .section__burger--img{
+    width: 40%;
+  }
+
+  .section__hambur--img{
+    width: 40%;
+  }
+
+  .footer{
+  flex-direction: column;
+    align-items: center;
+  }
+
+  .footer__list--2{
+    display: none;
+  }
+
+}
