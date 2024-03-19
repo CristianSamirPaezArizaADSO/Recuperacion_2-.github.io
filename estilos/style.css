@@ -5,6 +5,7 @@
     --color__boton: #f64b3c;
     --color__chef: #f54031;
     --color__foter: #222222;
+    --color__iconos: #000;
 }
 
 *{
@@ -17,14 +18,68 @@
       
 }
 
-.header{
-    position: relative;
-}
+/* comienzo header  */
 
-.header__fondo{
+.header{
+    background-image: url(../img/Sin-título-2.png);
     width: 100%;
     height: 100vh;
-    /* object-fit: cover; */
+    background-size: cover;
+    background-position: center;
+}
+
+
+.header__navegacion{
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 3%;
+    align-items: center;
+    background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+}
+
+
+.header__navegacion--list{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    color: var(--color__header);
+    list-style: none;
+    font-size: 30px;
+}
+
+.header__txt{
+    width: 50%;
+    padding: 3%;
+}
+
+.header__txt--title{
+    font-size: 100px;
+    color: var(--color__header);
+}
+
+.header__txt--p{
+    color: var(--color__header);
+    font-size: 30px;
+    margin-top: 3%;
+}
+
+.header__button{
+    border-radius: 90px;
+    font-size: 30px;
+    padding: 10px 90px;
+    color: var(--color__header);
+    background-color: var(--color__boton);
+    border: none;
+    margin-top: 4%;
+    display: flex;
+    justify-content: center;
+} 
+
+/* .header__fondo{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
 }
 
 
@@ -66,19 +121,7 @@
 
 .header__txt p {
     margin-top: 50px;
-}
-
-.header__button{
-    border-radius: 90px;
-    font-size: 30px;
-    padding: 10px 90px;
-    color: var(--color__header);
-    background-color: var(--color__boton);
-    border: none;
-    margin-top: 50px;
-    display: flex;
-    justify-content: center;
-}
+}*/
 
 
 /* comienzo la parte del personal */
@@ -115,7 +158,7 @@
 
 
 .section__chef--cards{
-    margin-top: 100px;
+    margin-top: 5%;
     display: flex;
     justify-content: space-evenly;
 }
@@ -141,7 +184,7 @@
 .section__burger{
     background-color: var(--color__chef);
     width: 100%;
-    height: 100vh;
+    height: 110vh;
     display: flex;
     justify-content: center;
 }
@@ -155,7 +198,7 @@
 
 
 .section__burger--title{
-    font-size: 80px;
+    font-size: 100px;
     color: var(--color__header);
 }
 
@@ -173,7 +216,7 @@
     color: var(--color__boton);
     background-color: var(--color__header);
     border: none;
-    margin-top: 50px;
+    margin-top: 4%;
     display: flex;
     justify-content: center;
 }
@@ -227,7 +270,7 @@
     align-items: center;
 }
 .section__estadisticas--tilte{
-    font-size: 80px;
+    font-size: 100px;
     color: var(--color__header);
 }
 
@@ -238,7 +281,7 @@
 }
 
 .section__estadisticas--cards{
-    margin-top: 100px;
+    margin-top: 5%;
     display: flex;
     justify-content: space-evenly;
 }
@@ -254,10 +297,10 @@
     display: flex;
     text-align: center;
     flex-direction: column;
-    gap: 200px;
+    gap: 18%;
 }
 .section__populares--txt{
-    margin-top: 70px;
+    margin-top: 4%;
 }
 
 .section__populares--cards{
@@ -373,12 +416,12 @@
     background-color: var(--color__foter);
     height: 100vh;
     color: var(--color__header);
-    display: flex;
+    /* display: flex; */
     align-items: center;
     justify-content: space-between;
-    /* gap: 15%; */
     padding: 20px;
 }
+
 
 .footer__txs{
     display: flex;
@@ -403,25 +446,7 @@
     text-align: start;
 }
 
-.footer__list--1{
-    list-style: none;
-    width: 300px;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    font-size: 25px;
-}
-
-.footer__list--2{
-    list-style: none;
-    width: 300px;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    font-size: 25px;
-}
-
-.footer__list--3 {
+.list {
     list-style-type: none;
     width: 300px;
     display: flex;
@@ -439,9 +464,195 @@
     padding: 10px;
     border-radius: 30px;
     background-color: var(--color__header);
-    color: black;
+    color: var(--color__iconos);
     width: 40px;
     text-align: center;
     font-size: 2em;
 }
 
+/* Media query para Laptop */
+
+@media (max-width: 1024px) {
+    /* comienzo header  */
+    .header{
+        width: 100%;
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .header__navegacion--list{
+        font-size: 20px;
+    }
+
+    .header__txt{
+        width: 48%;
+        margin-top: 5%;
+    }
+
+    .header__txt--title{
+        font-size: 60px;
+    }
+
+    .header__txt--p{
+        font-size: 20px;
+        margin-top: 10%;
+    }
+
+    .header__button{
+        font-size: 20px;
+        padding: 5px 60px;
+        margin-top: 10%;
+    }
+
+    /* comienzo chef  */
+
+    .section__chef{
+        width: 100%;
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .chef__card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section__chef--txs{
+        margin-top: 3%;
+        gap: 30px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .title{
+        font-size: 60px;
+    }
+
+    .section__chef--p{
+        font-size: 20px;
+    }
+
+    .card__img{
+        width: 70%;
+    }
+
+    .card__title{
+        font-size: 20px;
+    }
+
+    .card__txt{
+        font-size: 20px;
+    }
+
+    /* comienza la primera hamburgesa */
+
+    .section__burger{
+        width: 100%;
+        height: 100vh;
+    }
+
+    .section__burger--relleno{
+        gap: 50px;
+    }
+
+    .section__burger--title{
+        font-size: 60px;
+    }
+
+    .section__burger--p{
+        font-size: 20px;
+        width: 450px;
+    }
+
+    .burger__buton{
+        font-size: 20px;
+        padding: 5px 60px;
+        margin-top: 10%;
+    }
+
+    .section__burger--img{
+        width: 70%;
+    }
+
+    /* comienzo segunda hamburgesa */
+
+    .section__hambur{
+        width: 100%;
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .section__hambur--relleno{
+        gap: 50px;
+    }
+
+    .section__hambur--p{
+        font-size: 20px;
+        width: 450px;
+    }
+
+    /* comienzo estadisticas  */
+
+    .section__estadisticas{
+        width: 100%;
+        height: 100vh;
+    }
+
+    .section__estadisticas--txs{
+        gap: 30px;
+    }
+
+    .section__estadisticas--tilte{
+        font-size: 60px;
+    }
+
+    .section__estadisticas--p{
+        font-size: 20px;
+    }
+
+    .section__estadisticas--img{
+        width: 70%;
+    }
+
+    /* comienzo poplares  */
+
+    .section__populares{
+        width: 100%;
+        height: 100vh;
+        background-size: cover;
+        background-position: center; 
+    }
+
+    .card__contenido{
+        gap: 20px;
+    }
+
+    .card{
+        width: 300px;
+        height: 400px;
+    }
+
+    .populares__cards--img{
+        width: 30%;
+    }
+
+    .populares__cards--precio{
+        font-size: 26px;
+    }
+
+    .populares__cards--p{
+        font-size: 20px;
+    }
+
+    .populares__cards--boton{
+        font-size: 20px;
+        padding: 3px 60px;
+    }
+
+}
+  
