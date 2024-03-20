@@ -862,7 +862,7 @@
 
 /* Media qeury de la Mobile */
 
-@media screen and (max-width:320px) {
+@media screen and (max-width:375px) {
     
     /* comienzo header  */
 
