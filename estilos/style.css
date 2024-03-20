@@ -691,7 +691,6 @@
   /* comienzo header  */
   
   .header{
-    /* width: 100%; */
     height: 70vh;
     background-size: cover;
     background-position: center;
@@ -874,25 +873,39 @@
         display: none;
     }
 
+    .header__contenido{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
     .header__navegacion{
         justify-content: center;
+        width: 100%;
     }
 
     .header__navegacion--list{
-        font-size: 10px;
-        gap: 7%;
+      display: flex;
+      width: 100%;
+      justify-content: space-evenly;
+      font-size: 15px;
+    }
+
+    .header__txt{
+      justify-content: center;
+      width: 70%;
     }
 
     .header__txt--title{
-        font-size: 20px;
+        font-size: 30px;  
     }
 
     .header__txt--p{
-        font-size: 13px;
+        /* font-size: 15px; */
     }
 
     .header__button{
-        font-size: 13px;
+        font-size: 15px;
         padding: 5px 35px;
     }
 
@@ -996,7 +1009,7 @@
     /* comienzo popular */
 
     .section__populares{
-        height: 110vh;
+        height: 130vh;
         gap: 5%;
     }
 
@@ -1028,7 +1041,7 @@
     }
 
     .populares__cards--3{
-        display: none;
+        /* display: none; */
     }
 
     /* comienzo fondo */
