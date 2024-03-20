@@ -429,7 +429,7 @@
     /* comienzo header  */
     .header{
         /* width: 100%; */
-        height: 70vh;
+        height: 80vh;
         background-size: cover;
         background-position: center;
     }
@@ -440,7 +440,6 @@
 
     .header__txt{
         width: 48%;
-        margin-top: 5%;
     }
 
     .header__txt--title{
@@ -462,7 +461,7 @@
 
     .section__chef{
         /* width: 100%; */
-        height: 70vh;
+        height: 80vh;
         background-size: cover;
         background-position: center;
     }
@@ -530,20 +529,19 @@
     }
 
     .section__burger--img{
-        width: 70%;
+        width: 37%;
     }
 
     /* comienzo segunda hamburgesa */
 
     .section__hambur{
-        /* width: 100%; */
         height: 70vh;
         background-size: cover;
         background-position: center;
     }
 
     .section__hambur--img{
-      width: 70%;
+      width: 37%;
     }
 
     .section__hambur--relleno{
@@ -552,13 +550,12 @@
 
     .section__hambur--p{
         font-size: 20px;
-        width: 450px;
+        width: 82%;
     }
 
     /* comienzo estadisticas  */
 
     .section__estadisticas{
-        width: 100%;
         height: 70vh;
     }
 
@@ -581,7 +578,6 @@
     /* comienzo poplares  */
 
     .section__populares{
-        width: 100%;
         height: 100vh;
         background-size: cover;
         background-position: center; 
@@ -616,7 +612,6 @@
     /* comienzo fondo  */
 
     .section__fondo{
-        /* width: 100%; */
         height: 70vh;
         background-size: cover;
         background-position: center; 
@@ -637,7 +632,6 @@
     /* comienzo actializacion  */
 
     .section__actializacion{
-      /* width: 100%; */
       height: 70vh;
       display: flex;
       background-size: cover;
@@ -684,6 +678,7 @@
       text-align: center;
     }
 
+
     .footer__list--3{
       display: none;
     }
@@ -697,7 +692,7 @@
   
   .header{
     /* width: 100%; */
-    height: 60vh;
+    height: 70vh;
     background-size: cover;
     background-position: center;
   }
@@ -721,7 +716,7 @@
   /* comienza chef  */
 
   .section__chef{
-    height: 60vh;
+    height: 70vh;
   }
 
   .title{
@@ -734,7 +729,7 @@
   }
 
   .card__img{
-    width: 65%;
+    width: 60%;
   }
 
   .card__title{
@@ -748,7 +743,7 @@
   /* comienza la primera hamburgesa */
 
   .section__burger{
-    height: 60vh;
+    height: 70vh;
   }
 
   .section__burger--relleno{
@@ -768,20 +763,317 @@
   }
 
   .section__burger--img{
-    width: 40%;
+    width: 35%;
   }
 
-  .section__hambur--img{
-    width: 40%;
+  /* comienzo segunda hamburgesa */
+
+  .section__hambur--relleno{
+      gap: 30px;
+    }
+    
+    .section__hambur--img{
+      width: 35%;
+    }
+
+  .section__hambur--p{
+    font-size: 18px;
+  }
+
+  /* comienzo estadisticas  */
+
+  .section__estadisticas--txs{
+    gap: 15px;
+  }
+
+  .section__estadisticas--tilte{
+    font-size: 40px;
+  }
+
+  .section__estadisticas--p{
+    font-size: 18px;
+    width: 80%;
+  }
+
+  /* comienzo popular */
+
+  .card__contenido{
+    height: 70vh;
+    gap: 17px;
+  }
+
+  .card{
+    width: 250px;
+    height: 350px;
+  }
+
+  .populares__cards--img{
+    width: 30%;
+  }
+
+  .populares__cards--precio{
+    font-size: 22px;
+  }
+
+  .populares__cards--p{
+    font-size: 18px;
+  }
+
+  .populares__cards--boton{
+    font-size: 17px;
+    padding: 3px 40px;
+  }
+
+  /* comienzo fondo */
+
+  .section__fondo--txs{
+    gap: 70px;
+    align-items: center;
+  }
+
+  .section__fondo--p{
+    font-size: 20px;
+    width: 80%;
+  }
+
+  .section__fondo--autor{
+    font-size: 45px;
+  }
+
+  /* comienzo actualizacion */
+
+  .section__actializacion--p{
+    font-size: 20px;
+  }
+
+  .section__actializacion--img{
+    width: 70%;
   }
 
   .footer{
-  flex-direction: column;
     align-items: center;
   }
 
   .footer__list--2{
     display: none;
   }
+
+}
+
+/* Media qeury de la Mobile */
+
+@media screen and (max-width:320px) {
+    
+    /* comienzo header  */
+
+    .header{
+        height: 40vh;
+    }
+
+    .header__navegacion--logo{
+        display: none;
+    }
+
+    .header__navegacion{
+        justify-content: center;
+    }
+
+    .header__navegacion--list{
+        font-size: 10px;
+        gap: 7%;
+    }
+
+    .header__txt--title{
+        font-size: 20px;
+    }
+
+    .header__txt--p{
+        font-size: 13px;
+    }
+
+    .header__button{
+        font-size: 13px;
+        padding: 5px 35px;
+    }
+
+    /* comienzo chef */
+
+    .section__chef{
+        height: 100vh;
+    }
+
+    .section__chef--cards{
+        flex-direction: column;
+    }
+
+    .title{
+        font-size: 30px;
+    }
+
+    .section__chef--p{
+        font-size: 13px;
+    }
+
+    .card__img{
+        width: 30%;
+    }
+
+    .card__title{
+        font-size: 14px;
+    }
+
+    .card__txt{
+        font-size: 13px;
+    }
+
+  /* comienza la primera hamburgesa */
+
+    .section__burger{
+        flex-direction: column;
+    }
+
+    .section__burger--relleno{
+        flex-direction: column;
+    }
+
+    .section__burger--txs{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section__burger--title{
+        font-size: 30px;
+    }
+
+    .section__burger--img{
+        width: 45%;
+    }
+
+    .section__burger--p{
+        font-size: 13px;
+        text-align: center;
+    }
+
+    .burger__buton{
+        font-size: 13px;
+        padding: 3px 40px;
+    }
+
+    /* segunda hamburgesa */
+
+    .section__hambur{
+        flex-direction: column;
+    }
+
+    .section__hambur--relleno{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .section__hambur--txs{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section__hambur--p{
+        font-size: 13px;
+    }
+
+    .section__hambur--img{
+        order: -1;
+        width: 45%;
+    }
+
+    /* comienzo estadisticas */
+
+    .section__estadisticas--p{
+        font-size: 13px;
+    }
+
+
+    /* comienzo popular */
+
+    .section__populares{
+        height: 110vh;
+        gap: 5%;
+    }
+
+    .section__populares--cards{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .card{
+        width: 200px;
+        height: 300px;
+    }
+
+    .populares__cards--precio{
+        font-size: 19px;
+    }
+
+    .populares__cards--title{
+        font-size: 15px ;
+    }
+
+    .populares__cards--p{
+        font-size: 13px;
+    }
+
+    .populares__cards--boton{
+        font-size: 13px;
+    }
+
+    .populares__cards--3{
+        display: none;
+    }
+
+    /* comienzo fondo */
+
+    .section__fondo--p{
+        font-size: 15px;
+    }
+
+    .section__fondo--autor{
+        font-size: 30px;
+    }
+
+    /* comienzo actualizacion */
+
+    .section__actializacion--p{
+        font-size: 15px;
+        width: 90%;
+    }
+
+    /* comienzo footer */
+
+    .footer{
+        height: 60vh;
+        flex-direction: column;
+    }
+    .footer__txs{
+        width: 80%;
+        align-items: center;
+    }
+
+    .footer__title{
+        font-size: 23px;
+    }
+
+    .footer__p{
+        font-size: 13px;
+        text-align: center;
+    }
+
+    .icono{
+        font-size: 0.9em;
+    }
+
+    .footer__list--1{
+        display: none;
+    } 
 
 }
