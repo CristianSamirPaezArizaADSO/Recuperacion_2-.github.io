@@ -876,7 +876,7 @@
     .header__contenido{
       display: flex;
       flex-direction: column;
-      align-items: center;
+      /* align-items: center; */
     }
 
     .header__navegacion{
@@ -892,16 +892,17 @@
     }
 
     .header__txt{
+      margin-top: 4%;
       justify-content: center;
-      width: 70%;
+      width: 56%;
     }
 
     .header__txt--title{
-        font-size: 30px;  
+        font-size: 25px;  
     }
 
     .header__txt--p{
-        /* font-size: 15px; */
+        font-size: 15px;
     }
 
     .header__button{
@@ -912,31 +913,28 @@
     /* comienzo chef */
 
     .section__chef{
-        height: 100vh;
+        height: 115vh;
+        width: auto;
+        background-size: 425px ;
+        /* background-repeat: no-repeat ; */
     }
 
     .section__chef--cards{
         flex-direction: column;
+        gap: 30px;
     }
 
-    .title{
-        font-size: 30px;
-    }
-
-    .section__chef--p{
-        font-size: 13px;
-    }
 
     .card__img{
         width: 30%;
     }
 
     .card__title{
-        font-size: 14px;
+        font-size: 18px;
     }
 
     .card__txt{
-        font-size: 13px;
+        font-size: 17px;
     }
 
   /* comienza la primera hamburgesa */
