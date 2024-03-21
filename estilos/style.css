@@ -1063,6 +1063,7 @@
     .footer__txs{
         width: 80%;
         align-items: center;
+        background-color: aqua;
     }
 
     .footer__title{
