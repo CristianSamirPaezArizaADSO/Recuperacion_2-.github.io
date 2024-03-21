@@ -876,7 +876,6 @@
     .header__contenido{
       display: flex;
       flex-direction: column;
-      /* align-items: center; */
     }
 
     .header__navegacion{
@@ -892,7 +891,7 @@
     }
 
     .header__txt{
-      margin-top: 4%;
+      margin-top: 3%;
       justify-content: center;
       width: 56%;
     }
@@ -1007,7 +1006,7 @@
     /* comienzo popular */
 
     .section__populares{
-        height: 130vh;
+        height: 140vh;
         gap: 5%;
     }
 
@@ -1038,10 +1037,6 @@
         font-size: 13px;
     }
 
-    .populares__cards--3{
-        /* display: none; */
-    }
-
     /* comienzo fondo */
 
     .section__fondo--p{
@@ -1062,7 +1057,7 @@
     /* comienzo footer */
 
     .footer{
-        height: 60vh;
+        height: 50vh;
         flex-direction: column;
     }
     .footer__txs{
@@ -1080,7 +1075,7 @@
     }
 
     .icono{
-        font-size: 0.9em;
+        font-size: 1em;
     }
 
     .footer__list--1{
