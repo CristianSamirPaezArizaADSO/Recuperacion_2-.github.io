@@ -243,7 +243,7 @@
 .section__populares{
     background-image: url(../img/Sin-título-6.png);
     width: 100%;
-    height: 100vh;
+    height: 106vh;
     background-size: cover;
     background-position: center;
     display: flex;
@@ -915,7 +915,6 @@
         height: 115vh;
         width: auto;
         background-size: 425px ;
-        /* background-repeat: no-repeat ; */
     }
 
     .section__chef--cards{
@@ -973,6 +972,8 @@
     /* segunda hamburgesa */
 
     .section__hambur{
+        width: auto;
+        background-size: 425px ;
         flex-direction: column;
     }
 
@@ -1006,7 +1007,9 @@
     /* comienzo popular */
 
     .section__populares{
-        height: 140vh;
+        width: auto;
+        background-size: 425px ;
+        height: 150vh;
         gap: 5%;
     }
 
@@ -1039,6 +1042,10 @@
 
     /* comienzo fondo */
 
+    .section__fondo{
+        width: auto;
+    }
+
     .section__fondo--p{
         font-size: 15px;
     }
@@ -1048,6 +1055,11 @@
     }
 
     /* comienzo actualizacion */
+
+    .section__actializacion{
+        width: auto;
+        background-size: 425px ;
+    }
 
     .section__actializacion--p{
         font-size: 15px;
@@ -1063,7 +1075,6 @@
     .footer__txs{
         width: 80%;
         align-items: center;
-        background-color: aqua;
     }
 
     .footer__title{
