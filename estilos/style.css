@@ -1095,11 +1095,3 @@
     } 
 
 }
-
-@media screen and (max-width:375px){
-
-    .section__populares{
-        height: 180vh;
-    }
-
-}
